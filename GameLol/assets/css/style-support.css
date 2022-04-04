@@ -1,0 +1,387 @@
+@charset "utf-8";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+header {
+    background-color: black; /*or black?*/
+    border-bottom: .5px #f0b54c solid;
+    border-top: .5px #f0b54c solid;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+nav {
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style: none;
+    font-weight: bold;
+
+}
+
+nav ul li a {
+    color: #bb9c69;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+#banner {
+    width: 100%;
+}
+
+.right-nav ul li a {
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+.right-nav ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: center;
+    flex-basis: 25%;
+}
+
+.right-nav img{
+    width: 50%;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    margin: 2%;
+}
+.left-nav {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-basis: 75%;
+}
+
+.left-nav ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.left-nav ul li a{
+    font-size: 16px;
+}
+
+ul li {
+    display: inline-block;
+    text-decoration: none;
+    transition: 2s ease;
+}
+
+.burger{
+    display:none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #bb9c69;
+    margin: 5px;
+    transition: all 0.3 ease;
+}
+
+.support-cover-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.support-cover-logo img{
+    width: 25%;
+    margin-top: 5%; 
+    position: absolute;
+}
+
+.main-cover .support-cover img{
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+}
+
+.user-input input::placeholder{
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.support-user{
+    width: 40%;
+    background-color: white;
+    padding: 1%;
+    position: absolute;
+}
+
+.support-contain{
+    display: flex;
+    justify-content: center;
+    margin-top: 16%;
+}
+
+.user-input input{
+    width: 100%;
+}
+
+.user-input{
+    display: flex;
+    justify-content: center;
+    margin-right: 5%; 
+}
+
+.user-input input{
+    border: 1px white solid; 
+}
+
+.support-bottom{
+    margin-top: 18%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.pick-category{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.support-category{
+    color: #bb9c69;
+    padding: 2% 0% 0% 0%;
+    margin: 5% 10% 0% 10%;
+    border-top: 1px #967230 solid;
+    display: flex;
+}
+
+.support-category h2{
+    text-align: center;
+    color: #bb9c69;
+    
+}
+
+.support-account, .support-transaction, .support-bugs, .support-report{
+    width: 25%;
+    border: 1px #967230 solid;
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+.support-account:hover, .support-transaction:hover, .support-bugs:hover, .support-report:hover{
+    border: 1px white solid;
+    transition: .5s;
+}
+
+
+
+.support-category{
+    text-decoration: none;
+}
+
+
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    color: #e0c18f;
+    padding: 20px 20px 20px 20px;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer img{
+    margin-left: 10%;
+}
+
+footer p{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+#logoFoot{
+   width: 10%;
+   margin-left: 45%;
+}
+
+
+@media screen and (max-width: 1024px){
+    .user-input input::placeholder{
+    font-size: 12px;
+    }
+    
+    .pick-category{
+        font-size: 20px;
+    }
+    
+    .support-category{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    
+    .support-account, .support-transaction, .support-bugs, .support-report{   
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 724px){
+    .left-nav{
+        position:fixed;
+        right: 0px;
+        height: 100vh;
+        top: 0%;
+        background: linear-gradient(180deg, rgba(0,0,0,0.9079832616640406) 0%, rgba(0,0,0,0.8631653344931722) 38%, rgba(0,0,0,0.7455182756696428) 100%);
+        width: 100%;
+        transform: translateX(100%);
+        z-index: 5;
+        }
+    .left-nav a img{
+        display:none;
+    }
+    .left-nav li{
+        opacity: 0;
+    }
+    
+    #logo{
+        display: none;
+    }
+    .right-nav{
+        display: none;
+    }
+    .burger{
+        position:fixed;
+        display:block;
+        margin-left: 20px;
+        cursor: pointer;
+        z-index:7;
+    }
+    nav{
+        z-index:10;
+        background: black;
+    }
+
+    .nav-active{
+	transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+    }
+    
+    .user-input img{
+        width: 11%;
+    }
+    
+    .user-input input{
+        font-size: 12px;
+    }
+    
+    .user-input input::placeholder{
+        font-size: 8px;
+    }
+    
+    .pick-category{
+        font-size: 14px;
+    }
+    
+    .support-category img{
+        padding: 2% 2% 0% 2%;
+        width: 80%;
+    }
+    
+    .support-category{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    
+    .support-account, .support-transaction, .support-bugs, .support-report{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    #logoFoot{
+        margin-left: 40%;
+        width:20%;
+    }
+    
+    footer{
+        text-align: center;
+    }
+    
+    footer p{
+        font-size: 15px;
+    }
+    
+    
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+	opacity:0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
